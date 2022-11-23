@@ -1,0 +1,136 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background: url(images/tea-background.jpg);
+    background-size: 1800px;
+}
+
+.login{
+    width: 600px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 238, 221, 0.8);
+}
+
+.login h1{
+    color: rgb(84, 130, 53);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.login label{
+    color: rgb(84, 130, 53);
+    font-weight: 700;
+}
+
+
+.login input[type = "text"], .login input[type = "password"]{
+    border: 0;
+    background: white;
+    display: block;
+    margin: 20px center;
+    padding: 14px 10px;
+    width: 220px;
+    outline: black;
+}
+
+.login input[type = "submit"]{
+    border: 0;
+    background: rgb(222,222,190);
+    display: block;
+    margin: 20px center;
+    padding: 14px 25px;
+    outline: none;
+    border-radius: 24px;
+    cursor: pointer; 
+}
+
+.login input[type = "submit"]:hover{
+    background: rgb(84, 130, 53);
+}
+
+.login button{
+    border: 0;
+    background: rgb(222,222,190);
+    display: block;
+    margin: 20px center;
+    padding: 14px 25px;
+    outline: none;
+    border-radius: 24px; 
+    cursor: pointer; 
+}
+
+.login button:hover{
+    background: rgb(84, 130, 53);
+}
+
+.no-account{
+    width: 200px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    border-radius: 24px; 
+}
+
+.no-account h3{
+    color: rgb(84, 130, 53);
+    font-weight: 700; 
+    justify-content: space-between;
+    right: 50%;
+}
+
+.sign-up{
+    width: 400px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 238, 221, 0.8);
+}
+
+.sign-up h1{
+    color: rgb(84, 130, 53);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.sign-up input[type = "text"], .sign-up input[type = "number"], .sign-up input[type = "password"]{
+    border: 0;
+    background: white;
+    display: block;
+    margin: 20px center;
+    padding: 14px 10px;
+    width: 300px;
+    outline: black;
+}
+
+.sign-up p{
+    font-size: 14px;
+    margin: 15px 0;
+    display: inline-block;
+    color:white;
+    padding: 5px 20px;
+}
+
+.sign-up input[type = "button"]{
+    border: 0;
+    background: rgb(222,222,190);
+    display: block;
+    margin: 20px center;
+    padding: 14px 25px;
+    outline: none;
+    border-radius: 24px;
+    cursor: pointer; 
+}
+
+.sign-up input[type = "button"]:hover{
+    background: rgb(84, 130, 53);
+}

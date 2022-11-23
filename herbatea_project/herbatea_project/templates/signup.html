@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lan = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title> Sign-Up Page </title>
+        <link rel = "stylesheet" href = "static/style.css">
+        <script src = "static/script.js"></script>
+    </head>
+    <body>
+        <form class = "sign-up" action = "signup.html" method = "POST">
+            <h1> Sign Up </h1>
+
+            <label> Please fill in this form to create an account! </label>
+            <br>
+            <br>
+            <input type = "text" name = "" placeholder = "First Name*" id = "firstname">
+            <br>
+            <input type = "text" name = "" placeholder = "Surname" id = "surname">
+            <br>
+            <input type = "number" name = "" placeholder = "Phone Number*" id = "phone">
+            <br>
+            <input type = "text" name = "" placeholder = "Email Address*" id = "email">
+            <br>
+            <input type = "password" name = "" placeholder = "Password*" id = "password">
+            <br>
+            <input type = "password" name = "" placeholder = "Confirm Password*" id = "confirmpassword">
+            <br>
+            <p id = "message"></p>
+            <br>
+            <input type = "checkbox" name = "" placeholder = "" id = "checkbox">
+            <label for = "checkbox"> I accept the <a href = ""> Terms of Use </a> & <a href = ""> Privacy Policy </a> </label>
+            <br>
+            <br>
+            <input type = "button" name = "" value = "Sign Up" onclick = "checkPassword()">
+        </form>
+    </body>
+</html> 

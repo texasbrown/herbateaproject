@@ -16,6 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from herbatea_project.views import home
+from herbatea_project.views import login
+from herbatea_project.views import signup
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+    path('', home),
+    path('login', login),
+    path('signup', signup),
+]   
