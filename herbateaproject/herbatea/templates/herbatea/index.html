@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lan = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title> Login Page </title>
+        <link rel = "stylesheet" href = "static/style.css">
+        <script src = "static/script.js"></script>
+    </head>
+    <body>
+        <form class = "login" action = "index.html" method = "POST">
+            <h1> Login </h1>
+
+            <label> Email Address </label>
+            <br>
+            <br>
+            <input type = "text" name = "" placeholder = "Enter Email Address" id = "email">
+            <br>
+            <br>
+            <label> Password </label>
+            <br>
+            <br>
+            <input type = "password" name = "" placeholder = "Enter Password" id = "password">
+            <label>
+                <p> Forget <a href = " "> Password? </a> </p>
+            </label>
+            <br>
+            <input type = "submit" name = "" value = "Login" onclick = "validate()">
+            <section class = "no-account"> 
+                <h3> Don't have an account </h3>
+                <p> Just click on the button below to create an account </p>
+                <button type = "button" name = "" value = "Sign Up" onclick = "location.href = 'signup'"> Sign Up </button>
+            </section>
+        </form>
+    </body>
+</html> 
