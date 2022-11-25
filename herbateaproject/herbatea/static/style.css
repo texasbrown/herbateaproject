@@ -1,12 +1,12 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: Arial;
     background: url(images/tea-background.jpg);
-    background-size: 1800px;
+    background-size: cover;
 }
 
-.login{
+.login {
     width: 600px;
     padding: 30px;
     position: absolute;
@@ -16,19 +16,19 @@ body{
     background: rgb(255, 238, 221, 0.8);
 }
 
-.login h1{
+.login h1 {
     color: rgb(84, 130, 53);
     text-transform: uppercase;
     font-weight: 700;
 }
 
-.login label{
+.login label {
     color: rgb(84, 130, 53);
     font-weight: 700;
 }
 
-
-.login input[type = "text"], .login input[type = "password"]{
+.login input[type="text"],
+.login input[type="password"] {
     border: 0;
     background: white;
     display: block;
@@ -38,37 +38,37 @@ body{
     outline: black;
 }
 
-.login input[type = "submit"]{
+.login input[type="submit"] {
     border: 0;
-    background: rgb(222,222,190);
+    background: rgb(222, 222, 190);
     display: block;
     margin: 20px center;
     padding: 14px 25px;
     outline: none;
     border-radius: 24px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-.login input[type = "submit"]:hover{
+.login input[type="submit"]:hover {
     background: rgb(84, 130, 53);
 }
 
-.login button{
+.login button {
     border: 0;
-    background: rgb(222,222,190);
+    background: rgb(222, 222, 190);
     display: block;
     margin: 20px center;
     padding: 14px 25px;
     outline: none;
-    border-radius: 24px; 
-    cursor: pointer; 
+    border-radius: 24px;
+    cursor: pointer;
 }
 
-.login button:hover{
+.login button:hover {
     background: rgb(84, 130, 53);
 }
 
-.no-account{
+.no-account {
     width: 200px;
     padding: 30px;
     position: absolute;
@@ -76,17 +76,17 @@ body{
     left: 70%;
     transform: translate(-50%, -50%);
     background: rgb(255, 255, 255);
-    border-radius: 24px; 
+    border-radius: 24px;
 }
 
-.no-account h3{
+.no-account h3 {
     color: rgb(84, 130, 53);
-    font-weight: 700; 
+    font-weight: 700;
     justify-content: space-between;
     right: 50%;
 }
 
-.sign-up{
+.sign-up {
     width: 400px;
     padding: 30px;
     position: absolute;
@@ -96,13 +96,15 @@ body{
     background: rgb(255, 238, 221, 0.8);
 }
 
-.sign-up h1{
+.sign-up h1 {
     color: rgb(84, 130, 53);
     text-transform: uppercase;
     font-weight: 700;
 }
 
-.sign-up input[type = "text"], .sign-up input[type = "number"], .sign-up input[type = "password"]{
+.sign-up input[type="text"],
+.sign-up input[type="number"],
+.sign-up input[type="password"] {
     border: 0;
     background: white;
     display: block;
@@ -112,25 +114,25 @@ body{
     outline: black;
 }
 
-.sign-up p{
+.sign-up p {
     font-size: 14px;
     margin: 15px 0;
     display: inline-block;
-    color:white;
+    color: white;
     padding: 5px 20px;
 }
 
-.sign-up input[type = "button"]{
+.sign-up input[type="button"] {
     border: 0;
-    background: rgb(222,222,190);
+    background: rgb(222, 222, 190);
     display: block;
     margin: 20px center;
     padding: 14px 25px;
     outline: none;
     border-radius: 24px;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-.sign-up input[type = "button"]:hover{
+.sign-up input[type="button"]:hover {
     background: rgb(84, 130, 53);
 }
