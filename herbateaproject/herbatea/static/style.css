@@ -136,3 +136,22 @@ body {
 .sign-up input[type="button"]:hover {
     background: rgb(84, 130, 53);
 }
+
+#cart table {
+border-collapse:collapse;
+width:100%;
+table-layout:fixed;
+}
+
+#cart table thead{
+    font-weight:700;
+}
+#cart table thead td{
+    background:#fd8c66;
+    color: #fff;
+    border: none;
+    padding: 6px 0;
+
+}
+
+
