@@ -16,12 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from herbatea.views import index
+from herbatea.views import signin
 from herbatea.views import signup
+from herbatea.views import trackorder
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('herbatea.urls')),
-    path('index', index),
+    path('signin', signin),
     path('signup', signup),
+    path('trackorder', trackorder),
 ]
