@@ -4,8 +4,11 @@ from django.shortcuts import render
 def home(request):
     return render(request, 'home.html ', {})
 
-def index(request):
-    return render(request, 'herbatea/index.html')
+def signin(request):
+    return render(request, 'herbatea/signin.html')
 
 def signup(request):
     return render(request, 'herbatea/signup.html')
+
+def trackorder(request):
+    return render(request, 'herbatea/trackorder.html')

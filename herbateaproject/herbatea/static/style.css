@@ -134,3 +134,76 @@ body{
 .sign-up input[type = "button"]:hover{
     background: rgb(84, 130, 53);
 }
+
+.trackorder{
+    width: 650px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 238, 221, 0.8);
+}
+
+.trackorder h1{
+    color: rgb(84, 130, 53);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.trackorder label{
+    color: rgb(84, 130, 53);
+    font-weight: 700;
+}
+
+.trackorder input[type = "number"], .trackorder input[type = "text"]{
+    border: 0;
+    background: white;
+    display: block;
+    margin: 20px center;
+    padding: 14px 10px;
+    width: 220px;
+    outline: black;
+}
+
+.trackorder button{
+    border: 0;
+    background: rgb(222,222,190);
+    display: block;
+    margin: 20px center;
+    padding: 14px 25px;
+    outline: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.trackorder button:hover{
+    background: rgb(84, 130, 53);
+}
+
+.Or{
+    width: 100px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.tracking-number{
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+
+.track-button{
+    width: 50px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
