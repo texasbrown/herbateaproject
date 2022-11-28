@@ -14,6 +14,7 @@ class ContactUs(models.Model):
 
 
 class Customer(models.Model):
+    customerid= models.IntegerField(primary_key = True)
     fname = models.CharField(max_length=50)
     lname = models.CharField(max_length=100)
     email = models.EmailField(max_length=200)
