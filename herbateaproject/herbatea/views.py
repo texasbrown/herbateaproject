@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Orders
 
 # Create your views here.
 def home(request):
@@ -12,3 +13,8 @@ def signup(request):
 
 def trackorder(request):
     return render(request, 'herbatea/trackorder.html', {})
+
+def orders(request):
+    orders_list = Orders.objects.all()
+    return render(request, 'herbatea/orders.html', 
+    { 'orders': orders_list })
