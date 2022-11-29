@@ -10,35 +10,32 @@
 </head>
 
 <body>
-    <form class="sign-up" action="signup.html" method="POST">
+    {% block content %}
+    <form class="sign-up" action="{% url 'signup' %}" method="POST">
+        {% csrf_token %}
         <h1> Sign Up </h1>
 
         <label> Please fill in this form to create an account! </label>
         <br>
         <br>
-        <input type="text" name="" placeholder="First Name*" id="firstname">
+        <input type="text" name="fname" placeholder="First Name*" id="firstname">
         <br>
-        <input type="text" name="" placeholder="Surname" id="surname">
+        <input type="text" name="lname" placeholder="Surname" id="surname">
         <br>
-        <input type="number" name="" placeholder="Phone Number*" id="phone">
+        <input type="text" name="email" placeholder="Email Address*" id="email">
         <br>
-        <input type="text" name="" placeholder="Email Address*" id="email">
-        <br>
-        <input type="password" name="" placeholder="Password*" id="password">
+        <input type="password" name="password" placeholder="Password*" id="password">
         <br>
         <input type="password" name="" placeholder="Confirm Password*" id="confirmpassword">
         <br>
-        <p id="message"></p>
         <br>
-        <input type="checkbox" name="" placeholder="" id="checkbox">
-        <label for="checkbox"> I accept the <a href = ""> Terms of Use </a> & <a href = ""> Privacy Policy </a> </label>
+        <button type="submit" class="">Sign Up</button>
+
         <br>
-        <br>
-        <input type="button" name="" value="Sign Up" onclick="checkPassword()">
-        <br>
-        <input type="button" name="" value="Back to login" onclick="location.href = 'signin.html'">
+        <a href="{% url 'login' %}"><button type="button" value="sign up"> Back to login</a></button>
 
     </form>
+    {% endblock %}
 </body>
 
 </html>

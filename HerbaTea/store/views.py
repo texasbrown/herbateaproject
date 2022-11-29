@@ -1,5 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import *
+from .forms import CustomerForm
+from django.contrib import messages
 
 
 def home(request):
@@ -7,8 +9,15 @@ def home(request):
     return render(request, 'store/home.html', context)
 
 def signup(request):
-    context = {}
-    return render(request, 'store/signup.html', context)
+    if request.method == "POST":
+         form = CustomerForm(request.POST or None)
+         if form.is_valid():
+            form.save()
+            messages.success(request, ('Submitted Successfully'))
+         return redirect('home')
+    else:
+         return render(request, 'store/signup.html', {})
+
 
 def login(request):
     context = {}
