@@ -1,0 +1,297 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background: url(static/images/tea-background.jpg);
+    background-size: 1800px;
+}
+
+.login {
+    width: 600px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 238, 221, 0.8);
+}
+
+.login h1 {
+    color: rgb(84, 130, 53);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.login label {
+    color: rgb(84, 130, 53);
+    font-weight: 700;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    border: 0;
+    background: white;
+    display: block;
+    margin: 20px center;
+    padding: 14px 10px;
+    width: 220px;
+    outline: black;
+}
+
+.login input[type="submit"] {
+    border: 0;
+    background: rgb(222, 222, 190);
+    display: block;
+    margin: 20px center;
+    padding: 14px 25px;
+    outline: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+    background: rgb(84, 130, 53);
+}
+
+.login button {
+    border: 0;
+    background: rgb(222, 222, 190);
+    display: block;
+    margin: 20px center;
+    padding: 14px 25px;
+    outline: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background: rgb(84, 130, 53);
+}
+
+.no-account {
+    width: 200px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 255, 255);
+    border-radius: 24px;
+}
+
+.no-account h3 {
+    color: rgb(84, 130, 53);
+    font-weight: 700;
+    justify-content: space-between;
+    right: 50%;
+}
+
+.sign-up {
+    width: 400px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 238, 221, 0.8);
+}
+
+.sign-up h1 {
+    color: rgb(84, 130, 53);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.sign-up input[type="text"],
+.sign-up input[type="number"],
+.sign-up input[type="password"] {
+    border: 0;
+    background: white;
+    display: block;
+    margin: 20px center;
+    padding: 14px 10px;
+    width: 300px;
+    outline: black;
+}
+
+.sign-up p {
+    font-size: 14px;
+    margin: 15px 0;
+    display: inline-block;
+    color: white;
+    padding: 5px 20px;
+}
+
+.sign-up input[type="button"] {
+    border: 0;
+    background: rgb(222, 222, 190);
+    display: block;
+    margin: 20px center;
+    padding: 14px 25px;
+    outline: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.sign-up input[type="button"]:hover {
+    background: rgb(84, 130, 53);
+}
+
+.trackorder {
+    width: 650px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 238, 221, 0.8);
+}
+
+.trackorder h1 {
+    color: rgb(84, 130, 53);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.trackorder label {
+    color: rgb(84, 130, 53);
+    font-weight: 700;
+}
+
+.trackorder input[type="number"],
+.trackorder input[type="text"] {
+    border: 0;
+    background: white;
+    display: block;
+    margin: 20px center;
+    padding: 14px 10px;
+    width: 220px;
+    outline: black;
+}
+
+.trackorder button {
+    border: 0;
+    background: rgb(222, 222, 190);
+    display: block;
+    margin: 20px center;
+    padding: 14px 25px;
+    outline: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.trackorder button:hover {
+    background: rgb(84, 130, 53);
+}
+
+.Or {
+    width: 100px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+}
+
+.tracking-number {
+    width: 300px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+}
+
+#cart table {
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#cart table thead {
+    font-weight: 700;
+}
+
+#cart table thead td {
+    background: #fd8c66;
+    color: #fff;
+    border: none;
+    padding: 6px 0;
+}
+
+#cart table td {
+    border: 1px solid #b6b3b3;
+    text-align: center;
+}
+
+#cart table td:nth-child(1) {
+    width: 100px;
+}
+
+#cart table td:nth-child(2),
+#cart table td:nth-child(3) {
+    width: 200px;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+    width: 170px;
+}
+
+#cart table tbody img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+}
+
+#cart table tbody i {
+    color: #8d8c89;
+}
+
+#cart-bottom .discount>,
+#cart-bottom .total>div {
+    border: 1px solid #b6b3b3;
+}
+
+#cart-bottom .discount h5,
+#cart-bottom .total h5 {
+    background: #fd8c66;
+    color: #fff;
+    border: none;
+    padding: 6px 12;
+    font-weight: 700;
+}
+
+#cart-bottom .discount p,
+#cart-bottom .discount input {
+    padding: 0 12px;
+}
+
+#cart-bottom.discount input {
+    height: 44px;
+}
+
+#cart-bottom .discount input {
+    margin: 0 0 20px 12px;
+}
+
+#cart-bottom .total div>div {
+    padding: 0 12px;
+}
+
+#cart-bottom .total h6 {
+    color: #2a2a2a;
+}
+
+.second-hr {
+    background: #b8b7b3;
+    width: 100%;
+    height: 1px;
+}
+
+#cart-bottom .total div>button {
+    margin: 0 12px 20px 0;
+    display: flex;
+    justify-content: flex-end;
+}

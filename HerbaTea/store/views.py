@@ -6,6 +6,14 @@ def home(request):
     context = {}
     return render(request, 'store/home.html', context)
 
+def signup(request):
+    context = {}
+    return render(request, 'store/signup.html', context)
+
+def login(request):
+    context = {}
+    return render(request, 'store/login.html', context)
+
 def about(request):
     return render(request, 'store/about.html', {'title': 'About'})
 
