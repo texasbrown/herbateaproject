@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .models import *
 from .forms import CustomerForm
 from django.contrib import messages
+from django.contrib.auth import authenticate, login, logout
 
 
 def home(request):
@@ -20,8 +21,21 @@ def signup(request):
 
 
 def login(request):
+    if request.method == 'POST':
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+
+        Customer = authenticate(request, email=email, password=password)
+
+        if Customer is not None:
+            login(request, Customer)
+            return redirect('home')
     context = {}
     return render(request, 'store/login.html', context)
+
+#def login(request):
+#    context = {}
+ #   return render(request, 'store/login.html', context)
 
 def about(request):
     return render(request, 'store/about.html', {'title': 'About'})
