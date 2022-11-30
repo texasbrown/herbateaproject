@@ -1,6 +1,11 @@
+{% extends "store/base.html" %}
+ {% load static %}
+  {% block content %}
+
 <!DOCTYPE html>
+
 <html lan="en">
-{% load static %}
+
 
 <head>
     <meta charset="utf-8">
@@ -14,10 +19,10 @@
         {% csrf_token %}
         <h1> Login </h1>
 
-        <label> Email Address </label>
+        <label> Username </label>
         <br>
         <br>
-        <input type="text" name="email" placeholder="Enter Email Address" id="email">
+        <input type="text" name="username" placeholder="Enter Username" id="username">
         <br>
         <br>
         <label> Password </label>
@@ -28,13 +33,23 @@
             <p> Forget <a href = " "> Password? </a> </p>
         </label>
         <br>
-        <input type="submit" name="" value="Login" onclick="validate()">
+        <button type="submit" name="" value="Login">
         <section class="no-account">
+           
+
+
             <h3> Don't have an account </h3>
+            
             <p> Just click on the button below to create an account </p>
             <a href="{% url 'signup' %}"><button type="button" value="sign up"> Sign Up</a></button>
+            <!--below is code for message that pops up for incorrect details and if account is created-->
+            {% for message in messages %} 
+            <p id="test">{{message}}</p>
+            {% endfor %}
         </section>
     </form>
 </body>
 
 </html>
+
+{% endblock content %}

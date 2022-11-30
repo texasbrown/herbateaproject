@@ -1,6 +1,6 @@
+{% extends "store/base.html" %} {% load static %} {% block content %}
 <!DOCTYPE html>
 <html lan="en">
-{% load static %}
 
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    {% block content %}
+
     <form class="sign-up" action="{% url 'signup' %}" method="POST">
         {% csrf_token %}
         <h1> Sign Up </h1>
@@ -35,7 +35,8 @@
         <a href="{% url 'login' %}"><button type="button" value="sign up"> Back to login</a></button>
 
     </form>
-    {% endblock %}
+
 </body>
 
 </html>
+{% endblock content %}
