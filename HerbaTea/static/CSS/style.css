@@ -7,10 +7,10 @@ body {
 }
 
 .login {
-    width: 600px;
+    width: 700px;
     padding: 30px;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgb(255, 238, 221, 0.8);
@@ -34,7 +34,7 @@ body {
     display: block;
     margin: 20px center;
     padding: 14px 10px;
-    width: 220px;
+    width: 250px;
     outline: black;
 }
 
@@ -68,8 +68,18 @@ body {
     background: rgb(84, 130, 53);
 }
 
+.login p {
+    color: white;
+    border: 0;
+    background: rgb(222, 222, 190);
+    display: block;
+    margin: 20px center;
+    padding: 14px 25px;
+    width: 300px;
+}
+
 .no-account {
-    width: 200px;
+    width: 300px;
     padding: 30px;
     position: absolute;
     top: 50%;
@@ -90,7 +100,7 @@ body {
     width: 400px;
     padding: 30px;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgb(255, 238, 221, 0.8);
@@ -297,5 +307,57 @@ body {
 }
 
 .test {
-    color: black;
+    color: white;
+}
+
+.register {
+    width: 350px;
+    padding: 30px;
+    position: absolute;
+    justify-content: space-between;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(255, 238, 221, 0.8);
+}
+
+.register h1 {
+    color: rgb(84, 130, 53);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.username {
+    color: rgb(84, 130, 53);
+    font-weight: 700;
+}
+
+.email {
+    color: rgb(84, 130, 53);
+    font-weight: 700;
+}
+
+.password1 {
+    color: rgb(84, 130, 53);
+    font-weight: 700;
+}
+
+.password2 {
+    color: rgb(84, 130, 53);
+    font-weight: 700;
+}
+
+.register [button = "submit"] {
+    border: 0;
+    background: rgb(222, 222, 190);
+    display: block;
+    margin: 20px center;
+    padding: 14px 25px;
+    outline: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.register [button = "submit"]:hover {
+    background: rgb(84, 130, 53);
 }
