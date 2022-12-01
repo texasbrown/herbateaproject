@@ -67,6 +67,7 @@
 				<a href="{% url 'login' %}"class="btn btn-warning">Login</a>
 				{% endif %}
 				{% if request.user.is_authenticated %}
+				<span id="hello-msg">Welcome, {{request.user}}</span>
                 <a href="{% url 'logout' %}"class="btn btn-warning">logout</a>
 				{% endif %}
 				<a href="{% url 'cart' %}">

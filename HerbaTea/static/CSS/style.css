@@ -347,7 +347,7 @@ body {
     font-weight: 700;
 }
 
-.register [button = "submit"] {
+.register [button="submit"] {
     border: 0;
     background: rgb(222, 222, 190);
     display: block;
@@ -358,6 +358,6 @@ body {
     cursor: pointer;
 }
 
-.register [button = "submit"]:hover {
+.register [button="submit"]:hover {
     background: rgb(84, 130, 53);
 }
