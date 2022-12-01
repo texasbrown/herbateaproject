@@ -1,0 +1,13 @@
+{% extends "store/base.html" %}
+{% load static %}
+{% block content %}
+
+<h1> Order History <h1>
+   
+   {% for order_history in orders %}
+
+      {{ order_history }}
+
+   {% endfor %}
+
+{% endblock content %}
