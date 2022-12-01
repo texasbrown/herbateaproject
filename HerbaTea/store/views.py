@@ -105,3 +105,8 @@ def contact(request):
 def thankyou(request):
     context = {}
     return render(request, 'store/thankyou.html', context)
+
+def trackorder(request):
+    orders = Order.objects.all()
+    context = {'order_history':orders}
+    return render(request, 'store/trackorder.html', context)
