@@ -44,7 +44,7 @@ def loginPage(request):
 
             if user is not None:
                 login(request, user)
-                return redirect('home')
+                return redirect('products')
             else:
                 messages.info(request, 'Username OR password incorrect')
 
@@ -78,7 +78,7 @@ def signup(request):
          if form.is_valid():
             form.save()
             messages.success(request, ('Submitted Successfully'))
-         return redirect('home')
+         return redirect('products')
     else:
          return render(request, 'store/signup.html', {})
 
