@@ -21,31 +21,29 @@
 
         <label> Username </label>
         <br>
-        <br>
         <input type="text" name="username" placeholder="Enter Username" id="username">
         <br>
         <br>
         <label> Password </label>
         <br>
-        <br>
         <input type="password" name="password" placeholder="Enter Password" id="password">
-        <label>
-            <p> Forget <a href = " "> Password? </a> </p>
-        </label>
         <br>
-        <button type="submit" name="" value="Login">
+        <button type="submit" name="" value="Login"> Login </button>
+        <br>
+        <!--below is code for message that pops up for incorrect details and if account is created-->
+        {% for message in messages %} 
+        <p id="test">{{message}}</p>
+        {% endfor %}
         <section class="no-account">
            
 
 
             <h3> Don't have an account </h3>
+
+            <h6> Just click on the button below to create an account </h6>
             
-            <p> Just click on the button below to create an account </p>
-            <a href="{% url 'signup' %}"><button type="button" value="sign up"> Sign Up</a></button>
-            <!--below is code for message that pops up for incorrect details and if account is created-->
-            {% for message in messages %} 
-            <p id="test">{{message}}</p>
-            {% endfor %}
+            <a href = "{% url 'signup' %}"><button type="button" value="sign up"> Sign Up </button></a>
+
         </section>
     </form>
 </body>

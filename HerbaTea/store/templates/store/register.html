@@ -1,22 +1,54 @@
-<h3>Register</h3>
+{% extends "store/base.html" %}
+ {% load static %}
+  {% block content %}
 
-<form method="POST" action="">
-    {% csrf_token %}
+<!DOCTYPE html>
 
-{{form.username.label}}
-{{form.username}}
-
-{{form.email.label}}
-{{form.email}}
-
-{{form.password1.label}}
-{{form.password1}}
-
-{{form.password2.label}}
-{{form.password2}}
+<html lan="en">
 
 
-<input type="submit" name="Create User">
-{{form.errors}}
-already have an account <a href="{% url 'login' %}"> login</a>
-</form>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Register </title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+
+<body>
+    <form class="register" action="{% url 'register' %}" method="POST">
+        {% csrf_token %}
+        <h1> Register </h1>
+        <div class = "username">
+        {{form.username.label}}
+        </div>
+        {{form.username}}
+        <br>
+        <br>
+        <div class = "email">
+        {{form.email.label}}
+        </div>
+        {{form.email}}
+        <br>
+        <br>
+        <div class = "password1">
+        {{form.password1.label}}
+        </div>
+        {{form.password1}}
+        <br>
+        <br>
+        <div class = "password2">
+        {{form.password2.label}}
+        </div>
+        {{form.password2}}
+        <br>
+        <br>
+        <button type="submit" name="Create User"> Submit </button>
+        {{form.errors}}
+        <br>
+        <br>
+        Already have an account! <a href="{% url 'login' %}"> login</a>
+    </form>
+</body>
+</html>
+{% endblock content %}
