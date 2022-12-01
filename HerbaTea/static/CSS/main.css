@@ -484,11 +484,12 @@ p {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -42%);
     padding: 30px 40px;
     box-sizing: border-box;
     border-radius: 8px;
     text-align: center;
+    align-items: center;
     box-shadow: 0 0 20px #000000b3;
     font-family: Montserrat, sans-serif;
 }
