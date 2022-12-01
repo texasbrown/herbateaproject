@@ -51,7 +51,7 @@ def logoutUser(request):
 
 
 
-@login_required(login_url='login')
+
 def home(request):
     context = {}
     return render(request, 'store/home.html', context)
