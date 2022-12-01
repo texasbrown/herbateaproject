@@ -14,6 +14,7 @@ urlpatterns = [
 	path('register/', views.registerPage, name="register"),
 	path('trackorder/', views.trackorder, name="trackorder"),
 	path('logout/', views.logoutUser, name="logout"),
+	path('update_item/', views.updateItem, name="update_item"),
 
 
 
