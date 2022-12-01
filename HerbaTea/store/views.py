@@ -154,10 +154,10 @@ def thankyou(request):
     return render(request, 'store/thankyou.html', context)
 
 @login_required(login_url='login')
-def trackorder(request):
+def placedorder(request):
     orders = Order.objects.all()
     context = {'order_history':orders}
-    return render(request, 'store/trackorder.html', context)
+    return render(request, 'store/placedorder.html', context)
 
 def updateItem(request):
     data = json.loads(request.body)
