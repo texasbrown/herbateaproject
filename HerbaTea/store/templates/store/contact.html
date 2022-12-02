@@ -5,24 +5,28 @@
 
     <div class="contact-form">
 
+<form class="contact" action="{% url 'contact' %}" method="POST">
+    {% csrf_token %}
+
     <h1>Contact Us</h1>
 
     <div class="txtb">
-        <input type="text" name="" value="" placeholder="Enter Your Name">
+        <input type="text" name="full_name" value="" placeholder="Enter Your Name">
     </div> 
     <div class="txtb">
-        <input type="text" name="" value="" placeholder="Enter Your Email">
+        <input type="text" name="email" value="" placeholder="Enter Your Email">
     </div> 
     <div class="txtb">
-        <input type="text" name="" value="" placeholder="Enter Your Phone Number">
+        <input type="text" name="mobile_number" value="" placeholder="Enter Your Phone Number">
     </div> 
     <div class="txtb">
-        <textarea placeholder="Description... "></textarea>
+        <textarea name="description" placeholder="Description... "></textarea>
     </div> 
     <div class="btn-contact">
         <a href="{% url 'thankyou' %}" target="_blank">  
             <button><b>SEND</b></button> </a>
         </div>
+</form>
 
     </div>
 
