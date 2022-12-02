@@ -31,8 +31,8 @@
 	</script>
 
 </head>
-<body>
 
+<header>
 	<nav class="navbar navbar-expand-lg navbar-light bg-dark">
 		<a class="navbar-brand" href="{% url 'products' %}"><img  id="home-icon" src="{% static 'images/logo1.png' %}"></a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,15 +73,34 @@
 			</div>
 		</div>
 	</nav>
+</header>
 
-	<div class="container">
-		<br>
-		{% block content %}
+	<body>
+		<div class="container">
+			<br>
+			
+			{% block content %}
+
+			{% endblock content %}
+		</div>
+	</body>
 
 
-		{% endblock content %}
-	</div>
+<footer class="bg-light text-center text-white fixed-bottom">
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+            <div class="social-links">
+					<h5><b>Links</b></h5>
+                <a href="https://www.instagram.com/"><img src="{% static 'images/ig_logo.png' %}" alt="Instagram" id='instaimg'height='30px' width='30px'></a>
+                <a href="https://www.facebook.com/"><img src="{% static 'images/fb_logo.png' %}" alt="Facebook" id='facebookimg' height='30px' width='30px'></a>
+            </div>
+        </section>
+      </div>
 
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright - Herba Tea
+      </div>
+    </footer>
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
@@ -90,6 +109,6 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 	<script type="text/javascript" src="{% static 'js/cart.js' %}"></script>
-</body>
+
 </html>
 
