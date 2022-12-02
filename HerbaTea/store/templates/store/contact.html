@@ -10,7 +10,6 @@
 </head>
 
 
-<div class="contact-form">
 
 <form class="contact" action="{% url 'contact' %}" method="POST">
     {% csrf_token %}
@@ -35,6 +34,6 @@
         </div>
 </form>
 
-    </div>
+    
 
 {% endblock content %}
