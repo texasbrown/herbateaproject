@@ -137,6 +137,13 @@ def checkout(request):
 
 
 def contact(request):
+    if request.method == "POST":
+        form = CustomerForm(request.POST or None)
+        if form.is_valid():
+            form.save()
+            messages.success(request, ('Submitted Successfully'))
+        return redirect('thankyou')
+    else:
         return render(request, 'store/contact.html')
     
 
