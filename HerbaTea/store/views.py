@@ -13,7 +13,7 @@ from django.contrib.auth.models import Group
 
 @unauthenticated_user
 def registerPage(request):
-   
+
         form = CreateUserForm()
         if request.method == 'POST':
             form = CreateUserForm(request.POST)
@@ -58,19 +58,6 @@ def logoutUser(request):
 
 
 ##@allowed_users(allowed_roles=['admin', 'customer'])
-def home(request):
-    if request.user.is_authenticated:
-        customer = request.user.customer
-        order, created = Order.objects.get_or_create(customer=customer, complete=False)
-        items = order.orderitem_set.all()
-        cartItems = order.get_cart_items
-    else:
-        items = []
-        order = {'get_cart_total':0, 'get_cart_items':0}
-        cartItems = order['get_cart_items']
-
-    context = {'items': items, 'order':order, 'cartItems': cartItems}
-    return render(request, 'store/home.html', context)
 
 def signup(request):
     if request.method == "POST":
@@ -153,8 +140,8 @@ def thankyou(request):
 
 @login_required(login_url='login')
 def placedorder(request):
-    orders = Order.objects.all()
-    context = {'order_history':orders}
+    allItems = OrderItem.objects.all()
+    context = {'order_items':allItems}
     return render(request, 'store/placedorder.html', context)
 
 def updateItem(request):
