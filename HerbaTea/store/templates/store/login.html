@@ -1,18 +1,13 @@
 {% extends "store/base.html" %}
- {% load static %}
-  {% block content %}
-
-<!DOCTYPE html>
-
-<html lan="en">
-
+{% load static %}
+{% block content %}
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Login </title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
+
 
 <body>
     <form class="login" action="{% url 'login' %}" method="POST">
@@ -47,7 +42,5 @@
         </section>
     </form>
 </body>
-
-</html>
 
 {% endblock content %}
