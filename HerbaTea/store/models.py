@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.conf import settings
+from datetime import date
 # Create your models here.
 
 class Customer(models.Model):
@@ -30,12 +31,12 @@ class Product(models.Model):
 
 class Order(models.Model):
 	customer = models.ForeignKey(Customer, on_delete=models.SET_NULL, null=True, blank=True)
-	date_ordered = models.DateTimeField(auto_now_add=True)
+	date_ordered = models.DateField(default=date.today())
 	complete = models.BooleanField(default=False, null=True, blank=True)
 	transaction_id = models.CharField(max_length=100, null=True)
 
 	def __str__(self):
-		return str(self.id)
+		return str(self.id) 
 
 	@property
 	def get_cart_total(self):
@@ -53,7 +54,11 @@ class OrderItem(models.Model):
 	product = models.ForeignKey(Product, on_delete=models.SET_NULL, blank=True, null=True)
 	order = models.ForeignKey(Order, on_delete=models.SET_NULL, blank=True, null=True)
 	quantity = models.IntegerField(default=0, null=True, blank=True)
-	date_added = models.DateTimeField(auto_now_add=True)
+	date_added = models.DateField(default=date.today())
+
+	def __str__(self):
+		return str(self.id) + '   ' + str(self.product)
+
 
 	@property
 	def get_total(self):
